@@ -1,17 +1,32 @@
 import styled from "styled-components";
 
-const ButtonComp = styled.button`
-    background: linear-gradient(90deg, rgba(57,36,36,1) 0%, rgba(170,15,14,1) 30%, rgba(170,15,14,1) 50%, rgba(170,15,14,1) 70%, rgba(57,36,36,1) 100%);
-
-
+const ButtonCompBW = styled.button`
+    font-size: 1.2rem;
+    margin-top:20%;
     text-transform: uppercase;
-    letter-spacing: 0.2 rem;
-    width: 65%;
+    width: 55%;
     height: 3rem;
     border: none ;
     color: white;
-    border-radius: 2rem;
+    background-color:#2DABD3;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    &:hover {
+        background-color:#A0E6FD;
+        color: #2DABD3;
+;
+    }
+`
+const ButtonCompRB = styled.button`
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 55%;
+    height: 3rem;
+    border: none ;
+    color: #2DABD3;
+    background-color: white;
+    border-radius: 0.7rem;
     cursor: pointer;
 `
 
-export {ButtonComp}
+export {ButtonCompBW, ButtonCompRB}
