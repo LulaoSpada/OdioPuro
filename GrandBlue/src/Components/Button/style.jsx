@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const ButtonCompBW = styled.button`
     font-size: 1.2rem;
-    margin-top:20%;
     text-transform: uppercase;
     width: 55%;
     height: 3rem;
@@ -14,11 +13,11 @@ const ButtonCompBW = styled.button`
     &:hover {
         background-color:#A0E6FD;
         color: #2DABD3;
-;
+
     }
 `
 const ButtonCompRB = styled.button`
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     width: 55%;
     height: 3rem;
@@ -27,6 +26,9 @@ const ButtonCompRB = styled.button`
     background-color: white;
     border-radius: 0.7rem;
     cursor: pointer;
+    &:hover{
+        border:solid #A0E6FD;
+    }
 `
 
 export {ButtonCompBW, ButtonCompRB}

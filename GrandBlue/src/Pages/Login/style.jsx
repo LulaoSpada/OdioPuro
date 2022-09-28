@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import logo from '../../Assets/grandblue.svg'
 
 const ContainerLogin = styled.div`
     height: 100vh;
@@ -34,9 +33,17 @@ const TituloLogin = styled.h2`
     margin: 3rem 0 2rem 0;
    
 `
+const Paragrafo1 = styled.p`
+    
+    margin: 0 3rem 4rem 3rem;
+    font-size: 0.9rem;
+    text-align:center;
+
+`;
 
 const InputLogin = styled.div`
     display: flex;
+    gap: 6px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -44,20 +51,34 @@ const InputLogin = styled.div`
     width: 100%;
 `
 
-const ButtonLogin = styled.div`
-    margin: 1rem 0 2rem 0;
-    margin-top: 20%;
-    width: 100%;
+const Buttons = styled.div`
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
-`
+    flex-direction: row;
+    width:80%;
+    gap: 30px;
 
-const ImageLogo = styled.img`
+`;
+const ButtonsCad = styled.div`
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:80%;
+    margin: 4rem 0 0 0;
 
-    background: ${logo};
-    width:14rem;
+`;
+const ImageLogo = styled.div`
+
+    width: 10rem;
+    height: 10rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 5rem 0 0 0;
 
 `;
 
-export {ContainerLogin, LoginBox, TituloLogin, InputLogin, ButtonLogin, ImageLogo}
+
+
+export {ContainerLogin, LoginBox, TituloLogin, InputLogin, Paragrafo1, Buttons, ButtonsCad, ImageLogo} 
